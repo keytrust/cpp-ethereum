@@ -27,3 +27,5 @@ target_include_directories(evm PRIVATE ..)
 if (EVMJIT)
 	target_link_libraries(evm PRIVATE evmjit)
 endif()
+
+cotire(evm)

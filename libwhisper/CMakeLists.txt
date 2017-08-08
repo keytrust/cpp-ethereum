@@ -11,3 +11,5 @@ target_include_directories(whisper PRIVATE ../utils)
 target_link_libraries(whisper ${Dev_DEVCORE_LIBRARIES})
 target_link_libraries(whisper ${Dev_DEVCRYPTO_LIBRARIES})
 target_link_libraries(whisper ${Dev_P2P_LIBRARIES})
+
+cotire(whisper)

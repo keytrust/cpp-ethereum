@@ -9,3 +9,5 @@ target_include_directories(webthree PRIVATE ..)
 target_link_libraries(webthree ${Eth_ETHASH_LIBRARIES})
 target_link_libraries(webthree ${Eth_ETHASHSEAL_LIBRARIES})
 target_link_libraries(webthree ${Web3_WHISPER_LIBRARIES})
+
+cotire(webthree)

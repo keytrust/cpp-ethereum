@@ -11,3 +11,5 @@ find_package(Eth)
 target_include_directories(ethashseal PRIVATE ..)
 target_link_libraries(ethashseal ${Eth_ETHASH_LIBRARIES})
 target_link_libraries(ethashseal ${Eth_ETHEREUM_LIBRARIES})
+
+cotire(ethashseal)

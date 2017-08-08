@@ -21,3 +21,5 @@ endif()
 if (EVMJIT)
 	target_link_libraries(ethereum ${Eth_EVMJIT_LIBRARIES})
 endif()
+
+cotire(ethereum)

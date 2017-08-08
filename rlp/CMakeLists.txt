@@ -13,3 +13,5 @@ if (UNIX AND NOT APPLE)
 	target_link_libraries(rlp pthread)
 endif()
 
+cotire(rlp)
+
