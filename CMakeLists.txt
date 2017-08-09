@@ -118,9 +118,10 @@ add_subdirectory(libethcore)
 add_subdirectory(libevm)
 add_subdirectory(libp2p)
 add_subdirectory(libethereum)
-add_subdirectory(libweb3jsonrpc)
-add_subdirectory(libwebthree)
+
 add_subdirectory(libwhisper)
+add_subdirectory(libwebthree)
+add_subdirectory(libweb3jsonrpc)
 
 if (EVMJIT)
     add_subdirectory(evmjit)

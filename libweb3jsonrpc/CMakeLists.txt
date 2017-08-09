@@ -58,11 +58,7 @@ jsonrpcstub_create(web3jsonrpc test.json
 	TestClient ${CMAKE_CURRENT_BINARY_DIR} TestClient
 )
 
-find_package(Web3)
-
 target_include_directories(web3jsonrpc PRIVATE ..)
-target_link_libraries(web3jsonrpc ${Web3_WEBTHREE_LIBRARIES}
-                                  ${Web3_WHISPER_LIBRARIES}
-                                  JsonRpcCpp::Server)
+target_link_libraries(web3jsonrpc webthree whisper JsonRpcCpp::Server)
 
 cotire(web3jsonrpc)
