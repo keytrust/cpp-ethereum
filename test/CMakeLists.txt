@@ -59,6 +59,8 @@ endif()
 target_link_libraries(testeth ${Web3_WEB3JSONRPC_LIBRARIES})
 target_link_libraries(testeth ${Web3_WEBTHREE_LIBRARIES})
 
+cotire(testeth)
+
 enable_testing()
 set(CTEST_OUTPUT_ON_FAILURE TRUE)
 
